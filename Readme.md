@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Борисова](https://up.htmlacademy.ru/adaptive/20/user/104923).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://up.htmlacademy.ru/adaptive/20/user/983299).
 
 ---
 
