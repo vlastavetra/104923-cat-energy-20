@@ -7,7 +7,7 @@
 
   <body class="body">
     <header class="header">
-      <a class="header__logo-icon" aria-label="Кэт Энерджи иконка">
+      <a class="header__logo-icon" href="index.html" aria-label="Кэт Энерджи иконка">
         <svg fill="none" width="33.32" height="37.61" viewBox="0 0 34 38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <clipPath id="a">
             <path d="m0 0h33.32v37.61h-33.32z"/>
@@ -18,18 +18,18 @@
             </g>
         </svg>
       </a>
-      <a class="header__logo-main">
+      <a class="header__logo-main" href="index.html">
         <img src="img/logo-main.svg" width="101" height="18" alt="Кэт Энерджи логотип">
       </a>
 
       <nav class="header__nav">
         <button class="header__nav-toggle" type="button" aria-label="Открыть меню">+</button>
         <ul class="header__nav-list">
-          <li class="header__nav-item header__nav-item--active">
-            <a class="header__nav-link">Главная</a>
-          </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+            <a class="header__nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item header__nav-item--active">
+            <a class="header__nav-link">Каталог продукции</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="form.html">Подбор программы</a>
@@ -38,70 +38,235 @@
       </nav>
     </header>
 
-    <main class="main">
-      <h1 class="visually-hidden">Интернет-магазин Кэт Энерджи</h1>
+    <main class="main catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
 
-      <section class="pitch">
-        <h2 class="pitch__title">Функциональное питание для котов</h2>
-        <span class="pitch__tagline">Занялся собой? Займись котом!</span>
-        <img class="pitch__img" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy Pro с курицей">
-        <a class="button pitch__button" href="form.html">Подобрать программу</a>
+      <section class="offers">
+        <h2 class="visually-hidden">Основные товары</h2>
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-500-chicken.png" width="140" height="112" alt="Банка Cat Energy PRO 500 г с курицей">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy PRO 500 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Курица</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">700 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-1000-chicken.png" width="140" height="112" alt="Банка Cat Energy PRO 1000 г с курицей">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy PRO 1000 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Курица</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">1000 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-500-fish.png" width="140" height="112" alt="Банка Cat Energy PRO 500 г с рыбой">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy PRO 500 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">700 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-1000-fish.png" width="140" height="112" alt="Банка Cat Energy PRO 1000 г с рыбой">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy PRO 1000 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">1000 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-500-buckwheat.png" width="140" height="112" alt="Банка Cat Energy SLIM 500 г с гречкой">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy SLIM 500 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Гречка</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">400 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-1000-buckwheat.png" width="140" height="112" alt="Банка Cat Energy SLIM 1000 г с гречкой">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy SLIM 1000 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Курица</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">700 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <article class="offers__card">
+          <a class="offers__link" href="#">
+            <img class="offers__img" src="img/cat-energy-pro-500-rice.png" width="140" height="112" alt="Банка Cat Energy SLIM 500 г с рисом">
+          </a>
+          <table class="offers__description">
+            <caption class="offers__name">
+              <a href="#">Cat Energy SLIM 500 г</a>
+            </caption>
+            <tr>
+              <td class="offers__mark">Объем</td>
+              <td class="offers__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Вкус</td>
+              <td class="offers__value">Рис</td>
+            </tr>
+            <tr>
+              <td class="offers__mark">Цена</td>
+              <td class="offers__value">500 Р.</td>
+            </tr>
+          </table>
+          <a class="button offers__order" href="#">Заказать</a>
+        </article>
+
+        <div class="offers__show-all">
+          <span class="offers__text-1">Показать еще 100500 товаров</span>
+          <span class="offers__text-2">На самом деле вкусов гораздо больше!</span>
+          <a class="button offers__show-all-button" href="#">Показать все</a>
+        </div>
       </section>
 
-      <section class="programs">
-        <h2 class="visually-hidden">Программы питания для котов</h2>
-        <article class="programs__card">
-          <h3 class="programs__title">Похудение</h3>
-          <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link" href="catalog.html">Каталог SLIM</a>
-        </article>
-        <article class="programs__card">
-          <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link" href="catalog.html">Каталог Pro</a>
-        </article>
-      </section>
-
-      <section class="features">
-        <h2 class="features__title">Как это работает</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
+      <section class="extra-offers">
+        <h2 class="extra-offers__title">Дополнительные товары</h2>
+        <ul class="extra-offers__list">
+          <li class="extra-offers__item">
+            <table class="extra-offers__card">
+              <caption class="extra-offers__name">Сахарозаменитель</caption>
+              <tr>
+                <td class="extra-offers__mark">1 упаковка (100 г)</td>
+                <td class="extra-offers__value">200 Р</td>
+              </tr>
+            </table>
+            <a class="button extra-offers__order" href="#">Заказать</a>
           </li>
-          <li class="features__item">
-            <p class="features__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <li class="extra-offers__item">
+            <table class="extra-offers__card">
+              <caption class="extra-offers__name">Питьевая вода</caption>
+              <tr>
+                <td class="extra-offers__mark">5 литров</td>
+                <td class="extra-offers__value">50 Р</td>
+              </tr>
+            </table>
+            <a class="button extra-offers__order" href="#">Заказать</a>
           </li>
-          <li class="features__item">
-            <p class="features__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <li class="extra-offers__item">
+            <table class="extra-offers__card">
+              <caption class="extra-offers__name">Молоко</caption>
+              <tr>
+                <td class="extra-offers__mark">1 литр</td>
+                <td class="extra-offers__value">100 Р</td>
+              </tr>
+            </table>
+            <a class="button extra-offers__order" href="#">Заказать</a>
           </li>
-          <li class="features__item">
-            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <li class="extra-offers__item">
+            <table class="extra-offers__card">
+              <caption class="extra-offers__name">Витамины</caption>
+              <tr>
+                <td class="extra-offers__mark">1 упаковка (30 г)</td>
+                <td class="extra-offers__value">300 Р</td>
+              </tr>
+            </table>
+            <a class="button extra-offers__order" href="#">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__metrics">
-          <span class="example__metrics-numbers">5 кг</span>
-          <span class="example__metrics-text">снижение веса</span>
-        </div>
-        <div class="example__metrics">
-          <span class="example__metrics-numbers">60 дней</span>
-          <span class="example__metrics-text">затрачено времени</span>
-        </div>
-        <span class="example__cost">Затраты на питание: 15 000 руб.</span>
-        <div class="example__slider">
-          <div class="example__slider-imgs">
-            <img class="example__slider-before" src="img/before-mobile.png" width="311" height="232" alt="Кот Борис до замены питания">
-            <img class="example__slider-after" src="img/after-mobile.png" width="251" height="240" alt="Кот Борис после замены питания">
-          </div>
-          <div class="example__slider-tumbler">
-            <button class="example__slider-button" type="button">Было</button>
-            <button class="example__slider-button" type="button">Стало</button>
-          </div>
-        </div>
+      <section class="promo">
+        <h2 class="visually-hidden">Акция</h2>
+        <span class="promo__text">Закажите все и получите чехол для кота в подарок!</span>
       </section>
 
       <section class="contacts">
@@ -113,7 +278,7 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo-main">
+      <a class="footer__logo-main" href="index.html">
         <img src="img/logo-main.svg" width="128" height="24" alt="Кэт Энерджи логотип">
       </a>
       <ul class="footer__social-list">

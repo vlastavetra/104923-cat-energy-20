@@ -5,9 +5,9 @@
     <title>Кэт Энерджи</title>
   </head>
 
-  <body class="body">
+  <body>
     <header class="header">
-      <a class="header__logo-icon" aria-label="Кэт Энерджи иконка">
+      <a class="header__logo-icon" href="index.html" aria-label="Кэт Энерджи иконка">
         <svg fill="none" width="33.32" height="37.61" viewBox="0 0 34 38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <clipPath id="a">
             <path d="m0 0h33.32v37.61h-33.32z"/>
@@ -18,91 +18,108 @@
             </g>
         </svg>
       </a>
-      <a class="header__logo-main">
+      <a class="header__logo-main" href="index.html">
         <img src="img/logo-main.svg" width="101" height="18" alt="Кэт Энерджи логотип">
       </a>
 
       <nav class="header__nav">
         <button class="header__nav-toggle" type="button" aria-label="Открыть меню">+</button>
         <ul class="header__nav-list">
-          <li class="header__nav-item header__nav-item--active">
-            <a class="header__nav-link">Главная</a>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Главная</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="form.html">Подбор программы</a>
+          <li class="header__nav-item header__nav-item--active">
+            <a class="header__nav-link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <h1 class="visually-hidden">Интернет-магазин Кэт Энерджи</h1>
+    <main class="main program-brief">
+      <h1 class="program-brief__title">Подбор программы</h1>
 
-      <section class="pitch">
-        <h2 class="pitch__title">Функциональное питание для котов</h2>
-        <span class="pitch__tagline">Занялся собой? Займись котом!</span>
-        <img class="pitch__img" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy Pro с курицей">
-        <a class="button pitch__button" href="form.html">Подобрать программу</a>
-      </section>
+      <span class="program-brief__text-top">Заполните анкету, и мы подберем программу питания для вашего кота</span>
 
-      <section class="programs">
-        <h2 class="visually-hidden">Программы питания для котов</h2>
-        <article class="programs__card">
-          <h3 class="programs__title">Похудение</h3>
-          <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link" href="catalog.html">Каталог SLIM</a>
-        </article>
-        <article class="programs__card">
-          <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link" href="catalog.html">Каталог Pro</a>
-        </article>
-      </section>
-
-      <section class="features">
-        <h2 class="features__title">Как это работает</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="features__item">
-            <p class="features__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="features__item">
-            <p class="features__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="features__item">
-            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__metrics">
-          <span class="example__metrics-numbers">5 кг</span>
-          <span class="example__metrics-text">снижение веса</span>
-        </div>
-        <div class="example__metrics">
-          <span class="example__metrics-numbers">60 дней</span>
-          <span class="example__metrics-text">затрачено времени</span>
-        </div>
-        <span class="example__cost">Затраты на питание: 15 000 руб.</span>
-        <div class="example__slider">
-          <div class="example__slider-imgs">
-            <img class="example__slider-before" src="img/before-mobile.png" width="311" height="232" alt="Кот Борис до замены питания">
-            <img class="example__slider-after" src="img/after-mobile.png" width="251" height="240" alt="Кот Борис после замены питания">
+      <form class="program-brief__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="program-brief__fieldset program-brief__params">
+          <legend class="visually-hidden">Имя и параметры</legend>
+          <div class="program-brief__params-item">
+            <label class="program-brief___name-label" for="program-brief___name">Имя:*</label>
+            <input class="program-brief___name-input" type="text" name="name" id="program-brief___name" placeholder="Введите имя" value="Барсик" required>
           </div>
-          <div class="example__slider-tumbler">
-            <button class="example__slider-button" type="button">Было</button>
-            <button class="example__slider-button" type="button">Стало</button>
+          <div class="program-brief__params-item">
+            <label class="program-brief___weight-label" for="program-brief___weight">Вес (кг):*</label>
+            <input class="program-brief___weight-input" type="number" name="weight" id="program-brief___weight" placeholder="Введите вес" value="7" required>
           </div>
-        </div>
-      </section>
+          <div class="program-brief__params-item">
+            <label class="program-brief___age-label" for="program-brief___age">Возраст (лет):</label>
+            <input class="program-brief___age-input" type="number" name="age" id="program-brief___age" placeholder="Введите возраст" value="7">
+          </div>
+        </fieldset>
+
+        <fieldset class="program-brief__fieldset program-brief__goal">
+          <legend class="visually-hidden">Цель программы</legend>
+          <ul class="program-brief__goal-list">
+            <li class="program-brief__goal-item">
+              <input class="program-brief___goal-input" type="radio" name="slimming" id="program-brief___slimming" checked>
+              <label class="program-brief___goal-label" for="program-brief___slimming">Похудение</label>
+            </li>
+            <li class="program-brief__goal-item">
+              <input class="program-brief___goal-input" type="radio" name="muscle" id="program-brief___muscle">
+              <label class="program-brief___goal-label" for="program-brief___muscle">Набор массы</label>
+            </li>
+            <li class="program-brief__goal-item">
+              <input class="program-brief___goal-input" type="radio" name="undefined" id="program-brief___undefined">
+              <label class="program-brief___goal-label" for="program-brief___undefined">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="program-brief__fieldset program-brief__contacts">
+          <legend class="program-brief__contacts-title">Контактные данные (владельца кота)</legend>
+          <div class="program-brief__contacts-item">
+            <label class="program-brief___contacts-label" for="program-brief___email">E-mail:*</label>
+            <input class="program-brief___contacts-input" type="email" name="email" id="program-brief___email" placeholder="Введите email" value="kuklachev@gmail.com" required>
+          </div>
+          <div class="program-brief__contacts-item">
+            <label class="program-brief___contacts-label" for="program-brief___tel">Телефон:*</label>
+            <input class="program-brief___contacts-input" type="tel" name="tel" id="program-brief___tel" placeholder="Введите номер" value="8 (960) 900-60-90" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="program-brief__fieldset program-brief__comment">
+          <legend class="program-brief__comment-title">Комментарий</legend>
+          <label class="visually-hidden" for="program-brief__comment-text">Текст комментария:</label>
+          <textarea class="program-brief__comment-text" name="text" id="program-brief__comment-text" rows="4" placeholder="Введите текст">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+
+        <fieldset class="program-brief__fieldset program-brief__optional">
+          <legend class="program-brief__optional-title">Дополнительно</legend>
+          <ul class="program-brief__optional-list">
+            <li class="program-brief__optional-item">
+              <input class="program-brief___optional-input" type="checkbox" name="sweetener" id="program-brief___sweetener" checked>
+              <label class="program-brief___optional-label" for="program-brief___sweetener">Cахарозаменитель</label>
+            </li>
+            <li class="program-brief__optional-item">
+              <input class="program-brief___optional-input" type="checkbox" name="water" id="program-brief___water">
+              <label class="program-brief___optional-label" for="program-brief___water">Питьевая вода</label>
+            </li>
+            <li class="program-brief__optional-item">
+              <input class="program-brief___optional-input" type="checkbox" name="milk" id="program-brief___milk">
+              <label class="program-brief___optional-label" for="program-brief___milk">Молоко</label>
+            </li>
+            <li class="program-brief__optional-item">
+              <input class="program-brief___optional-input" type="checkbox" name="vitamins" id="program-brief___vitamins">
+              <label class="program-brief___optional-label" for="program-brief___vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button program-brief__submit-button" type="submit">Отправить заявку</button>
+        <span class="program-brief__text-bottom">* — Обязательные поля</span>
+      </form>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -113,7 +130,7 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo-main">
+      <a class="footer__logo-main" href="index.html">
         <img src="img/logo-main.svg" width="128" height="24" alt="Кэт Энерджи логотип">
       </a>
       <ul class="footer__social-list">
