@@ -43,16 +43,16 @@
 
       <span class="program-brief__text-top">Заполните анкету, и мы подберем программу питания для вашего кота</span>
 
-      <form class="program-brief__form" action="https://echo.htmlacademy.ru" action="post">
+      <form class="program-brief__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="program-brief__fieldset program-brief__params">
           <legend class="visually-hidden">Имя и параметры</legend>
           <div class="program-brief__params-item">
-            <label class="program-brief___name-label" for="program-brief___name" required>Имя:*</label>
-            <input class="program-brief___name-input" type="text" name="name" id="program-brief___name" placeholder="Введите имя" value="Барсик">
+            <label class="program-brief___name-label" for="program-brief___name">Имя:*</label>
+            <input class="program-brief___name-input" type="text" name="name" id="program-brief___name" placeholder="Введите имя" value="Барсик" required>
           </div>
           <div class="program-brief__params-item">
-            <label class="program-brief___weight-label" for="program-brief___weight" required>Вес (кг):*</label>
-            <input class="program-brief___weight-input" type="number" name="weight" id="program-brief___weight" placeholder="Введите вес" value="7">
+            <label class="program-brief___weight-label" for="program-brief___weight">Вес (кг):*</label>
+            <input class="program-brief___weight-input" type="number" name="weight" id="program-brief___weight" placeholder="Введите вес" value="7" required>
           </div>
           <div class="program-brief__params-item">
             <label class="program-brief___age-label" for="program-brief___age">Возраст (лет):</label>
@@ -81,12 +81,12 @@
         <fieldset class="program-brief__fieldset program-brief__contacts">
           <legend class="program-brief__contacts-title">Контактные данные (владельца кота)</legend>
           <div class="program-brief__contacts-item">
-            <label class="program-brief___contacts-label" for="program-brief___email" required>E-mail:*</label>
-            <input class="program-brief___contacts-input" type="email" name="email" id="program-brief___email" placeholder="Введите email" value="kuklachev@gmail.com">
+            <label class="program-brief___contacts-label" for="program-brief___email">E-mail:*</label>
+            <input class="program-brief___contacts-input" type="email" name="email" id="program-brief___email" placeholder="Введите email" value="kuklachev@gmail.com" required>
           </div>
           <div class="program-brief__contacts-item">
-            <label class="program-brief___contacts-label" for="program-brief___tel" required>Телефон:*</label>
-            <input class="program-brief___contacts-input" type="tel" name="tel" id="program-brief___tel" placeholder="Введите номер" value="8 (960) 900-60-90">
+            <label class="program-brief___contacts-label" for="program-brief___tel">Телефон:*</label>
+            <input class="program-brief___contacts-input" type="tel" name="tel" id="program-brief___tel" placeholder="Введите номер" value="8 (960) 900-60-90" required>
           </div>
         </fieldset>
 
@@ -125,7 +125,7 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716093266!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595249635579!5m2!1sru!2sru" width="100%" height="362" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716093266!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595249635579!5m2!1sru!2sru" width="320" height="362" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
