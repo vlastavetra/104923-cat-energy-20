@@ -21,10 +21,7 @@
 .features__list {
   width: 280px;
 
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset;
 }
 
 .features__item {
@@ -34,14 +31,9 @@
 
 
   &::before {
-    position: absolute;
-
-    content: "";
+    @include pseudo-element(60px,60px);
 
     top: -3px;
-
-    width: 60px;
-    height: 60px;
 
     background-color: $basic_green;
   }
@@ -53,18 +45,13 @@
   margin: 0;
   padding-left: 80px;
 
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
 
   &::before {
-    position: absolute;
-
-    content: "";
+    @include pseudo-element(60px,60px);
 
     top: 3px;
     left: 5px;
-
-    width: 60px;
-    height: 60px;
   }
 
   &-composition::before {

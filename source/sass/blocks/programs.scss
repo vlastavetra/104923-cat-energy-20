@@ -20,15 +20,10 @@
   position: relative;
 
   &::before {
-    content: "";
-
-    position: absolute;
+    @include pseudo-element(36px, 50px);
 
     top: 21px;
     left: 29px;
-
-    width: 36px;
-    height: 50px;
 
     background-image: url(../../img/icon-cat-slim.svg);
     background-repeat: no-repeat;
@@ -41,15 +36,10 @@
   position: relative;
 
   &::before {
-    content: "";
-
-    position: absolute;
+    @include pseudo-element(67px, 28px);
 
     top: 35px;
     left: 13px;
-
-    width: 67px;
-    height: 28px;
 
     background-image: url(../../img/icon-cat-pro.svg);
     background-repeat: no-repeat;
@@ -73,15 +63,10 @@
   text-transform: uppercase;
 
   &::before {
-    content: "";
-
-    position: absolute;
+    @include pseudo-element(50px, 53px);
 
     left: 0px;
     top: -10px;
-
-    width: 50px;
-    height: 53px;
 
     background-color: $basic_green;
     border-radius: 50%;
@@ -96,7 +81,7 @@
 
   padding-bottom: 23px;
 
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
 
   color: $special_dark-grey;
 
@@ -114,28 +99,20 @@
   text-transform: uppercase;
 
   &::after {
-    content: "";
+    @include pseudo-element(32px, 10px);
 
-    position: absolute;
     bottom: 4px;
     left: 90px;
-
-    width: 32px;
-    height: 10px;
 
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
   &:hover::after, &:focus::after {
-    content: "";
+    @include pseudo-element(32px, 10px);
 
-    position: absolute;
     bottom: 4px;
     left: 90px;
-
-    width: 32px;
-    height: 10px;
 
     background-image: url("../../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;

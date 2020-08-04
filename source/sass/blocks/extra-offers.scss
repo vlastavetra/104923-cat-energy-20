@@ -21,15 +21,10 @@
   line-height: 24px;
 
   &::after {
-    position: absolute;
-
-    content: "";
+    @include pseudo-element(53px, 2px);
 
     top: 55%;
     right: 0px;
-
-    width: 53px;
-    height: 2px;
 
     background-color: $basic_green;
   }
@@ -38,13 +33,13 @@
 .extra-offers__list {
   width: 280px;
 
+  @include list-reset;
+
   margin: 0 auto;
   padding: 0 20px;
 
   display: grid;
   grid-template-columns: 1fr;
-
-  list-style: none;
 }
 
 .extra-offers__item {
@@ -84,7 +79,7 @@
 
   display: flex;
 
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -95,7 +90,6 @@
 
 .extra-offers__mark {
   width: 50%;
-
 }
 
 .extra-offers__value {

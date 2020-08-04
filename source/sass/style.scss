@@ -1,7 +1,9 @@
 // Начните писать стили здесь
-@import "./variables.scss";
-@import "./fonts.scss";
-@import "./base.scss";
+@import "./utils/colors.scss";
+@import "./utils/fonts.scss";
+@import "./utils/base.scss";
+@import "./utils/button.scss";
+@import "./utils/mixin.scss";
 
 @import "./blocks/header.scss";
 

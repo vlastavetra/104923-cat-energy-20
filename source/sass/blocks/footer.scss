@@ -19,14 +19,11 @@
 }
 
 .footer__social-list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 33px;
-
-  list-style: none;
 }
 
 .footer__social-item {
@@ -36,10 +33,9 @@
 .footer__logo-html {
   width: 280px;
 
+  padding-top: 22px;
   margin-top: 21px;
   margin-bottom: 22px;
-
-  padding-top: 22px;
 
   display: flex;
   justify-content: space-between;
@@ -49,8 +45,7 @@
 }
 
 .footer__logo-html-text {
-  font-family: Arial;
-
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
 

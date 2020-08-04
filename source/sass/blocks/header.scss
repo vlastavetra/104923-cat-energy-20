@@ -1,9 +1,9 @@
 .header__logo {
   display: block;
-  padding-left: 20px;
 
   padding-top: 11px;
   padding-bottom: 11px;
+  padding-left: 20px;
 
   &:hover, &:focus {
     opacity: 0.8;
@@ -21,29 +21,26 @@
 }
 
 .header__nav-toggle {
-  position: absolute;
+  @include pseudo-element(24px, 19px);
+
   right: 20px;
   top: 25px;
 
-  width: 24px;
-  height: 19px;
-
   cursor: pointer;
+
   border: none;
 
   background-color: inherit;
 }
 
-.header__nav--opened {
+.header__nav--opened .header__nav-toggle {
   background-image: url("../img/icon-close.svg");
-  background-size: 24px 19px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.header__nav--closed {
+.header__nav--closed .header__nav-toggle {
   background-image: url("../img/icon-mobile-menu.svg");
-  background-size: 24px 19px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -51,9 +48,7 @@
 .header__nav-list {
   position: relative;
 
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
   &--closed {
     display: none;
