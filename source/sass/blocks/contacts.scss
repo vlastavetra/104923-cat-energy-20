@@ -1,0 +1,40 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  &-grey {
+    background-color: $basic_grey;
+  }
+}
+
+.contacts__text {
+  width: 280px;
+
+  margin-top: 28px;
+  margin-bottom: 22px;
+
+  display: flex;
+}
+
+.contacts__text-notice {
+  width: 50%;
+
+  font-size: 16px;
+
+  text-transform: uppercase;
+}
+
+.contacts__text-address {
+  width: 50%;
+
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+
+  color: $special_dark-grey;
+}
+
+.contacts__map {
+  width: 100%;
+}

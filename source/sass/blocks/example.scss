@@ -1,0 +1,142 @@
+.example {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $basic_grey-3;
+}
+
+.example__title {
+  margin: 23px;
+  margin-bottom: 33px;
+  margin-left: -63px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  width: 280px;
+
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-family: "Arial", sans-serif;
+
+  color: $special_dark-grey;
+}
+
+.example__metrics {
+  width: 280px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__metrics-item {
+  position: relative;
+
+  width: 124px;
+
+  margin-bottom: 23px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  &::after {
+    @include pseudo-element(124px, 56px);
+
+    top: -15px;
+
+    border: 1px solid $special_grey;
+    border-radius: 3px;
+  }
+}
+
+.example__metrics-value {
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 10px;
+}
+
+.example__metrics-mark {
+  position: relative;
+
+  width: 77px;
+
+  font-family: "Arial", sans-serif;
+
+  font-size: 12px;
+  line-height: 12px;
+
+  color: $special_dark-grey;
+
+  z-index: 2;
+
+  &::before {
+    @include pseudo-element(87px, 100%);
+
+    left: -48px;
+    transform: translateX(50%);
+
+    background-color: $basic_grey-3;
+
+    z-index: -1;
+  }
+}
+
+.example__cost {
+  margin-bottom: 42px;
+
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.example__slider {
+  margin-bottom: 29px;
+}
+
+.example__slider-imgs {
+  margin-bottom: 30px;
+}
+
+.example__slider-after {
+  display: none;
+}
+
+.example__slider-tumbler {
+  width: 228px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__slider-button {
+  padding: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  background-color: inherit;
+
+  border: none;
+  border-bottom: 1px solid $basic_grey-3;
+
+  &:hover, &:focus {
+    border-bottom: 1px solid $transparent_wblack-04;
+  }
+}

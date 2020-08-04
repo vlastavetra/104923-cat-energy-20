@@ -1,0 +1,31 @@
+.button {
+  display: block;
+
+  min-width: 280px;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: $basic_white;
+  background-color: $basic_green;
+
+  border: none;
+
+  &:hover, &:focus {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: $transparent_white-03;
+    background-color: $basic_green;
+  }
+}
