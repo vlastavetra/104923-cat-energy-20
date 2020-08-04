@@ -1,0 +1,42 @@
+.pitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.pitch__title {
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+  width: 249px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  text-align: center;
+
+  color: $basic_white;
+}
+
+.pitch__tagline {
+  margin-bottom: 29px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  text-transform: uppercase;
+
+  color: $basic_white;
+}
+
+.pitch__img {
+  margin-bottom: 3px;
+}

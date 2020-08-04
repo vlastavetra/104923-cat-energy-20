@@ -1,0 +1,139 @@
+.catalog__title {
+  margin: 0 auto;
+
+  padding-top: 31px;
+  padding-bottom: 36px;
+
+  text-align: center;
+
+  font-weight: 400;
+
+  font-size: 36px;
+  line-height: 36px;
+
+  border-bottom: 1px solid $basic_grey-2;
+}
+
+.offers {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin-bottom: 28px;
+}
+
+.offers__card {
+  width: 280px;
+
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+
+  border-bottom: 1px solid $basic_grey-2;
+}
+
+.offers__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers__description {
+  width: 50%;
+  margin-bottom: 20px;
+
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+
+  color: $special_dark-grey;
+}
+
+.offers__name {
+  width: 60%;
+
+  margin-bottom: 18px ;
+
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: left;
+
+  text-transform: uppercase;
+}
+
+.offers__value {
+  text-align: right;
+}
+
+.offers__order {
+  width: 100%;
+}
+
+.offers__show-all {
+  width: 280px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid $basic_grey-2;
+}
+
+.offers__text-1 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: $special_black;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    top: -53px;
+    left: 45%;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../../img/icon-plus-mobile.svg);
+    background-repeat: no-repeat;
+
+    color: $special_grey-4;
+  }
+}
+
+.offers__text-2 {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: $special_dark-grey;
+}
+
+.offers__show-all-button {
+  font-size: 16px;
+
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+}
