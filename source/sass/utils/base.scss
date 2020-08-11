@@ -9,10 +9,12 @@ img {
 }
 
 .body {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
-  min-width: 280px;
+  min-width: 320px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -39,34 +41,23 @@ img {
   overflow: hidden;
 }
 
-.button {
-  display: block;
+.wrapper {
+  box-sizing: border-box;
 
-  min-width: 280px;
+  width: 280px;
+  padding: 0 20px;
 
-  padding-top: 14px;
-  padding-bottom: 14px;
+  margin: 0 auto;
 
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-
-  text-transform: uppercase;
-
-  color: $basic_white;
-  background-color: $basic_green;
-
-  border: none;
-
-  &:hover, &:focus {
-    background-color: $basic_green-2;
+  @media (min-width:$tablet) {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0;
   }
 
-  &:active {
-    color: $transparent_white-03;
-    background-color: $basic_green;
+  @media (min-width:$desktop) {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0;
   }
 }

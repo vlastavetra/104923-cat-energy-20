@@ -1,15 +1,25 @@
 .programs {
-  padding: 0 20px;
-
   margin-bottom: 27px;
 
   display: grid;
-  grid-template-rows: 1fr 1fr;
   row-gap: 20px;
+
+  @media (min-width:$tablet) {
+    width: 100%;
+
+    margin-bottom: 45px;
+  }
+
+  @media (min-width:$desktop) {
+    margin-bottom: 71px;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .programs__card {
-  width: 280px;
+  width: 100%;
 
   margin: 0 auto;
 

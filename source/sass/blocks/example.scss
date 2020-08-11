@@ -3,23 +3,46 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   background-color: $basic_grey-3;
+
+  @media (min-width:$tablet) {
+    background-color: $basic_white;
+
+    border-top: 1px solid $special_grey-3;
+  }
+
+  @media (min-width:$desktop) {
+    position: relative;
+
+    border: none;
+  }
 }
 
 .example__title {
-  margin: 23px;
   margin-bottom: 33px;
-  margin-left: -63px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  text-align: left;
+
+  @media (min-width:$tablet) {
+    margin-top: 43px;
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width:$desktop) {
+    margin-top: 0;
+  }
 }
 
 .example__text {
-  width: 280px;
+  width: 100%;
 
   margin-top: 0;
   margin-bottom: 40px;
@@ -27,13 +50,33 @@
   font-family: "Arial", sans-serif;
 
   color: $special_dark-grey;
+
+  @media (min-width:$tablet) {
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width:$desktop) {
+    width: 36%;
+  }
 }
 
 .example__metrics {
-  width: 280px;
+  width: 100%;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width:$tablet) {
+    width: 53%;
+  }
+
+  @media (min-width:$desktop) {
+    width: 30%;
+  }
 }
 
 .example__metrics-item {
@@ -50,45 +93,85 @@
   text-align: center;
 
   &::after {
-    @include pseudo-element(124px, 56px);
+    @include pseudo-element(100%, 56px);
 
-    top: -15px;
+    top: -10px;
 
     border: 1px solid $special_grey;
     border-radius: 3px;
+
+    @media (min-width:$tablet) {
+      top: -17px;
+
+      height: 70px;
+    }
+  }
+
+  @media (min-width:$tablet) {
+    width: 162px;
+  }
+
+  @media (min-width:$desktop) {
+    margin-bottom: 55px;
   }
 }
 
 .example__metrics-value {
+  margin-bottom: 10px;
+
   font-size: 24px;
   line-height: 24px;
 
-  margin-bottom: 10px;
+  text-align: center;
+
+  @media (min-width:$tablet) {
+    font-size: 30px;
+    line-height: 37px;
+
+    text-transform: uppercase;
+  }
 }
 
 .example__metrics-mark {
   position: relative;
 
-  width: 77px;
+  width: 60%;
 
   font-family: "Arial", sans-serif;
 
   font-size: 12px;
   line-height: 12px;
 
+  text-align: center;
+
   color: $special_dark-grey;
 
   z-index: 2;
 
   &::before {
-    @include pseudo-element(87px, 100%);
+    @include pseudo-element(100%, 100%);
 
-    left: -48px;
+    left: -38px;
     transform: translateX(50%);
 
     background-color: $basic_grey-3;
 
     z-index: -1;
+
+    @media (min-width:$tablet) {
+      width: 80%;
+
+      left: -48px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: $basic_white;
+    }
+  }
+
+  @media (min-width:$tablet) {
+    width: 100%;
   }
 }
 
@@ -98,14 +181,52 @@
   line-height: 20px;
 
   text-transform: uppercase;
+
+  @media (min-width:$tablet) {
+    margin-top: -80px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+
+    text-align: right;
+  }
+
+  @media (min-width:$desktop) {
+    width: 30%;
+
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    text-align: left;
+  }
+}
+
+.example__cost-value {
+  @media (min-width:$desktop) {
+    text-align: center;
+  }
 }
 
 .example__slider {
-  margin-bottom: 29px;
+  padding-bottom: 29px;
+
+  @media (min-width:$desktop) {
+    position: absolute;
+
+    bottom: 0;
+    right: 110px;
+  }
 }
 
 .example__slider-imgs {
   margin-bottom: 30px;
+
+  text-align: center;
 }
 
 .example__slider-after {
