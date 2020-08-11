@@ -4,13 +4,13 @@
   display: grid;
   row-gap: 20px;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 100%;
 
     margin-bottom: 45px;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 71px;
 
     grid-template-columns: 1fr 1fr;
@@ -24,7 +24,7 @@
   margin: 0 auto;
 
   background-color: $basic_grey;
-  }
+}
 
 .programs__card-slim {
   position: relative;
@@ -35,7 +35,7 @@
     top: 21px;
     left: 29px;
 
-    background-image: url(../../img/icon-cat-slim.svg);
+    background-image: url("../../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
 
     z-index: 1;
@@ -51,7 +51,7 @@
     top: 35px;
     left: 13px;
 
-    background-image: url(../../img/icon-cat-pro.svg);
+    background-image: url("../../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
 
     z-index: 1;
@@ -75,7 +75,7 @@
   &::before {
     @include pseudo-element(50px, 53px);
 
-    left: 0px;
+    left: 0;
     top: -10px;
 
     background-color: $basic_green;
@@ -84,7 +84,7 @@
 }
 
 .programs__text {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 33px;
@@ -114,17 +114,18 @@
     bottom: 4px;
     left: 90px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
-  &:hover::after, &:focus::after {
+  &:hover::after,
+  &:focus::after {
     @include pseudo-element(32px, 10px);
 
     bottom: 4px;
     left: 90px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
   }
 

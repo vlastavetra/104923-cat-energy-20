@@ -12,8 +12,8 @@
 
   border-bottom: 1px solid $basic_grey-2;
 
-  @media (min-width:$tablet) {
-    padding-top: 0px;
+  @media (min-width: $tablet) {
+    padding-top: 0;
     padding-left: 30px;
     margin-bottom: 164px;
 
@@ -25,8 +25,8 @@
     border: none;
   }
 
-  @media (min-width:$desktop) {
-    padding-bottom: 0px;
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
     padding-left: 110px;
 
     text-align: left;
@@ -41,7 +41,7 @@
 
   margin-bottom: 28px;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 100%;
 
     margin: 0;
@@ -52,7 +52,7 @@
     row-gap: 140px;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     margin: 0;
     margin-bottom: 75px;
 
@@ -60,7 +60,6 @@
     column-gap: 80px;
     row-gap: 144px;
   }
-
 }
 
 .offers__card {
@@ -69,7 +68,7 @@
 
   border-bottom: 1px solid $basic_grey-2;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 250px;
 
     padding-top: 161px;
@@ -80,7 +79,7 @@
     background-color: $basic_grey;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     width: 180px;
 
     padding-top: 351px;
@@ -98,7 +97,7 @@
 }
 
 .offers__link {
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     position: absolute;
 
     top: -134px;
@@ -118,7 +117,7 @@
 
   color: $special_dark-grey;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 100%;
 
     text-align: center;
@@ -138,7 +137,7 @@
 
   text-transform: uppercase;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     margin: 0 auto;
 
     font-size: 20px;
@@ -151,7 +150,7 @@
 .offers__mark {
   text-align: left;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     padding: 9px 0;
 
     font-size: 16px;
@@ -162,14 +161,14 @@
 .offers__value {
   text-align: right;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 16px;
   }
 }
 
 .offers__order {
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     padding-top: 9px;
     padding-bottom: 9px;
   }
@@ -183,7 +182,7 @@
 
   border-bottom: 1px solid $basic_grey-2;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     text-align: center;
 
     padding-top: 161px;
@@ -211,13 +210,13 @@
     top: -53px;
     left: 45%;
 
-    background-image: url(../../img/icon-plus-mobile.svg);
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
 
     color: $special_grey-4;
   }
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 60%;
 
     margin: 0 auto;
@@ -248,7 +247,7 @@
   background-color: $basic_grey;
   color: $special_dark-grey;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 90%;
 
     margin: 0 auto;

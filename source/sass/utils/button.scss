@@ -20,7 +20,8 @@
 
   border: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $basic_green-2;
   }
 

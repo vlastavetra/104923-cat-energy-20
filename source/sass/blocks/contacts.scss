@@ -7,7 +7,7 @@
     background-color: $basic_grey;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     position: relative;
   }
 }
@@ -22,11 +22,11 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 625px;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     position: absolute;
 
     top: 25%;
@@ -50,14 +50,14 @@
 
   text-transform: uppercase;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 30%;
 
     font-size: 20px;
     line-height: 21px;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     gap: 30%;
   }
 }
@@ -72,14 +72,14 @@
 
   color: $special_dark-grey;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 25%;
 
     font-size: 16px;
     text-align: right;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     width: 40%;
 
     text-align: left;
