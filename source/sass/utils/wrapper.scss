@@ -1,20 +1,18 @@
 .wrapper {
   box-sizing: border-box;
 
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
+  padding: $padding-h-mobile;
 
   margin: 0 auto;
 
   @media (min-width: $tablet) {
     width: 768px;
-    padding: 0 30px;
-    margin: 0;
+    padding: $padding-h-tablet;
   }
 
   @media (min-width: $desktop) {
-    width: 1220px;
-    padding: 0 110px;
-    margin: 0;
+    width: 1440px;
+    padding: $padding-h-desktop;
   }
 }

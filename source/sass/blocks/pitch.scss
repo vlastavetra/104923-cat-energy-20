@@ -1,20 +1,19 @@
 .pitch {
-  padding-bottom: 22px;
-
   display: flex;
   flex-direction: column;
+
+  padding-bottom: 22px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
 
-
   &::before {
     @media (min-width: $desktop) {
       @include pseudo-element(720px, 696px);
 
-      top: -10px;
-      right: 0;
+      top: -2px;
+      right: 1px;
 
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: right;
@@ -25,41 +24,37 @@
   }
 
   @media (min-width: $tablet) {
-    width: 100%;
-
-    padding-bottom: 530px;
+    padding-bottom: 526px;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: -20% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 300px;
+    padding-bottom: 161px;
 
     background-image: url("../img/index-can-desktop@1x.png");
-    background-position: 67% 20%;
+    background-position: 62.9% 27%;
   }
 }
 
 .pitch__title {
-  margin-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 25px;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include main-title-small;
 
   text-align: center;
 
   color: $basic_white;
 
   @media (min-width: $tablet) {
-    margin-top: 0;
-    margin-bottom: 41px;
+    padding-top: 48px;
+    padding-bottom: 41px;
+    padding-left: 87px;
 
-    font-size: 60px;
-    line-height: 60px;
+    @include main-title-large;
 
     text-align: left;
 
@@ -67,11 +62,15 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 111px;
+    padding-top: 94px;
+    padding-bottom: 39px;
+    padding-left: 80px;
   }
 }
 
 .pitch__tagline {
+  display: block;
+
   margin-bottom: 29px;
 
   font-weight: 400;
@@ -85,6 +84,7 @@
   color: $basic_white;
 
   @media (min-width: $tablet) {
+    padding-left: 88px;
     margin-bottom: 49px;
 
     font-size: 20px;
@@ -93,11 +93,14 @@
 
     color: $basic_black;
   }
+
+  @media (min-width: $tablet) {
+    padding-left: 80px;
+    margin-bottom: 52px;
+  }
 }
 
 .pitch__img {
-  margin-bottom: 3px;
-
   @media (min-width: $tablet) {
     order: 4;
   }
@@ -108,9 +111,18 @@
 }
 
 .pitch__button {
+  font-size: 14px;
+  line-height: 18px;
+
   @media (min-width: $tablet) {
     width: 244px;
 
     font-size: 20px;
+
+    margin-left: 82px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 79px;
   }
 }

@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -7,46 +9,70 @@
     background-color: $basic_grey;
   }
 
-  @media (min-width: $desktop) {
-    position: relative;
+  &::after {
+    @include pseudo-element(57px, 53px);
+
+    bottom: 37.2%;
+    left: 40.2%;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      bottom: 32%;
+      left: 46%;
+    }
+
+    @media (min-width: $desktop) {
+      bottom: 50%;
+      left: 47.7%;
+    }
   }
 }
 
 .contacts__text {
-  width: 280px;
-
-  padding-top: 28px;
-  padding-bottom: 22px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet) {
-    width: 625px;
+    padding-top: 65px;
+    padding-bottom: 57px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
+    position: relative;
 
-    top: 25%;
-    left: 10%;
+    top: 320px;
+    left: 110px;
 
-    width: 405px;
+    width: 570px;
 
     padding-top: 66px;
     padding-bottom: 59px;
     padding-left: 76px;
     padding-right: 89px;
+    margin: 0;
+    margin-top: -250px;
 
     background-color: $basic_white;
+
+    z-index: 1;
   }
 }
 
 .contacts__text-notice {
   width: 50%;
+  margin-left: -1px;
 
   font-size: 16px;
+  line-height: 20px;
 
   text-transform: uppercase;
 
@@ -54,16 +80,17 @@
     width: 30%;
 
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 
   @media (min-width: $desktop) {
-    gap: 30%;
+    width: 50%;
   }
 }
 
 .contacts__text-address {
   width: 50%;
+  margin-left: 3px;
 
   font-family: "Arial", sans-serif;
   line-height: 20px;
@@ -72,20 +99,40 @@
 
   color: $special_dark-grey;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     width: 25%;
 
+    margin-top: -1px;
+
     font-size: 16px;
     text-align: right;
+
+    & br {
+      display: inline-block;
+    }
   }
 
   @media (min-width: $desktop) {
-    width: 40%;
+    width: 38.7%;
 
     text-align: left;
   }
 }
 
 .contacts__map {
+  position: relative;
+
   width: 100%;
+  height: 362px;
+
+  margin: 0 auto;
+  margin-bottom: -3px;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }

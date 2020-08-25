@@ -1,25 +1,25 @@
 .features {
-  margin-bottom: 18px;
-
   display: flex;
   flex-direction: column;
 
+  width: 100%;
+
+  margin-bottom: 20px;
+
   @media (min-width: $tablet) {
-    width: 100%;
+    margin-bottom: 24px;
   }
 }
 
 .features__title {
-  margin-top: 0;
-  margin-bottom: 36px;
-
+  margin-bottom: 40px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 72px;
+    margin-bottom: 74px;
 
     font-size: 60px;
     line-height: 60px;
@@ -30,21 +30,27 @@
   @include list-reset;
 
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 59px;
+    row-gap: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .features__item {
   position: relative;
 
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   &::before {
     @include pseudo-element(60px,60px);
 
-    top: -3px;
+    top: -2px;
 
     background-color: $basic_green;
 
@@ -55,8 +61,10 @@
   }
 
   @media (min-width: $tablet) {
-    width: 40%;
-    min-height: 200px;
+    width: 80%;
+    max-width: 400px;
+
+    margin-bottom: 0;
 
     font-family: "Arial", sans-serif;
     font-size: 16px;
@@ -64,7 +72,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 20%;
+    width: 100%;
   }
 }
 
@@ -83,7 +91,7 @@
     left: 5px;
 
     @media (min-width: $tablet) {
-      top: 10px;
+      top: 13px;
       left: 15px;
     }
   }
@@ -114,5 +122,61 @@
     margin-bottom: 77px;
 
     color: $special_dark-grey;
+
+    &::after {
+      position: absolute;
+
+      top: -40px;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+
+      color: $basic_grey;
+
+      z-index: -1;
+    }
+
+    &-composition::after {
+      content: "1";
+
+      right: 30px;
+
+      @media (min-width: $desktop) {
+        right: 15px;
+      }
+    }
+
+    &-form::after {
+      content: "2";
+
+      right: 15px;
+
+      @media (min-width: $desktop) {
+        right: 0;
+      }
+    }
+
+    &-instruction::after {
+      content: "3";
+
+      right: 12px;
+
+      @media (min-width: $desktop) {
+        right: -2px;
+      }
+    }
+
+    &-duration::after {
+      content: "4";
+
+      right: 10px;
+
+      @media (min-width: $desktop) {
+        right: -4px;
+      }
+    }
   }
 }
