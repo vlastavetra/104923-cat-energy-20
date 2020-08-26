@@ -1,37 +1,68 @@
 .extra-offers {
-  width: 320px;
-
   margin-bottom: 39px;
 
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet) {
-    width: 100%;
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-bottom: 82px;
   }
 }
 
 .extra-offers__title {
   position: relative;
 
-  margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
 
+  &::before {
+    @media (min-width: $tablet) {
+      @include pseudo-element(1300px, 2px);
+
+      top: 60%;
+      left: -1300px;
+
+      background-color: $basic_green;
+    }
+
+    @media (min-width: $desktop) {
+      top: 64%;
+      left: -1340px;
+    }
+  }
+
   &::after {
     @include pseudo-element(53px, 2px);
 
-    top: 55%;
-    right: 0;
+    top: 63%;
+    right: -20px;
 
     background-color: $basic_green;
+
+    @media (min-width: $tablet) {
+      width: 400px;
+
+      top: 61%;
+      right: -103px;
+
+      background-color: $basic_green;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1959px;
+
+      top: 64%;
+      right: -1110px;
+    }
   }
 
   @media (min-width: $tablet) {
     padding-left: 38px;
+    margin-bottom: 80px;
 
     font-size: 36px;
     line-height: 36px;
@@ -43,8 +74,6 @@
 }
 
 .extra-offers__list {
-  width: 100%;
-
   @include list-reset;
 
   display: grid;
@@ -56,7 +85,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 70%;
+    width: 73.5%;
 
     border-left: none;
     border-right: none;
@@ -65,7 +94,7 @@
 
 .extra-offers__item {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   display: flex;
   flex-direction: column;
@@ -79,15 +108,17 @@
   }
 
   @media (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
     padding-left: 38px;
     padding-right: 38px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 0;
-    padding-right: 0;
-
     flex-direction: row;
+
+    padding: 0;
+    padding-top: 15px;
   }
 }
 
@@ -98,21 +129,22 @@
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    padding-bottom: 27px;
+    margin-bottom: 26px;
 
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
-    width: 65%;
+    width: 60%;
 
+    padding-top: 9px;
     padding-bottom: 0;
   }
 }
 
 .extra-offers__name {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   font-style: normal;
   font-weight: 400;
@@ -127,14 +159,23 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 161px;
+
+    margin-right: 165px;
   }
 }
 
 .extra-offers__row {
-  width: 280px;
-  margin-bottom: 13px;
-
   display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
 
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -146,21 +187,44 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 286px;
+    margin-top: 1px;
   }
 }
 
 .extra-offers__mark {
-  width: 50%;
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .extra-offers__value {
-  width: 50%;
-
   text-align: right;
+
+  @media (min-width: $tablet) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
+  }
 }
 
 .extra-offers__order {
+  @media (min-width: $tablet) {
+
+    padding-bottom: 11px;
+  }
+
   @media (min-width: $desktop) {
-    width: 30%;
+    width: 27%;
+
+    margin-top: -16px;
   }
 }

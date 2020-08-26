@@ -1,17 +1,22 @@
 .programs {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 21px;
+
   margin-bottom: 27px;
 
-  display: grid;
-  row-gap: 20px;
-
   @media (min-width: $tablet) {
-    width: 100%;
+    row-gap: 30px;
 
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 71px;
+    width: 100%;
+
+    padding-top: 107px;
+    margin: 0;
+    margin-bottom: 73px;
 
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -19,11 +24,21 @@
 }
 
 .programs__card {
-  width: 100%;
-
-  margin: 0 auto;
+  padding: $padding-h-mobile;
+  padding-top: 29px;
+  padding-bottom: 22px;
 
   background-color: $basic_grey;
+
+  @media (min-width: $tablet) {
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .programs__card-slim {
@@ -32,13 +47,29 @@
   &::before {
     @include pseudo-element(36px, 50px);
 
-    top: 21px;
+    top: 20px;
     left: 29px;
 
     background-image: url("../../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
 
     z-index: 1;
+
+    @media (min-width: $tablet) {
+      width: 140px;
+      height: 192px;
+
+      top: 81px;
+      left: 477px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 70px;
+      height: 97px;
+
+      top: 40px;
+      left: 66px;
+    }
   }
 }
 
@@ -48,23 +79,37 @@
   &::before {
     @include pseudo-element(67px, 28px);
 
-    top: 35px;
+    top: 34px;
     left: 13px;
 
     background-image: url("../../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
 
     z-index: 1;
+
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 112px;
+
+      top: 135px;
+      left: 412px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 134px;
+      height: 100px;
+
+      top: 66px;
+      left: 32px;
+    }
   }
 }
 
 .programs__title {
   position: relative;
 
-  margin-top: 30px;
+  padding-left: 71px;
   margin-bottom: 29px;
-  margin-left: 22px;
-  padding-left: 69px;
 
   font-weight: 400;
   font-size: 24px;
@@ -73,29 +118,88 @@
   text-transform: uppercase;
 
   &::before {
-    @include pseudo-element(50px, 53px);
+    @include pseudo-element(50px, 50px);
 
-    left: 0;
-    top: -10px;
+    top: -6px;
+    left: 2px;
 
     background-color: $basic_green;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      width: 200px;
+      height: 200px;
+
+      top: 15px;
+      left: 395px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 100px;
+      height: 100px;
+
+      top: -31px;
+      left: -1px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 161px;
+    margin-bottom: 73px;
   }
 }
 
 .programs__text {
-  margin-top: 0;
-  margin-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 33px;
-
-  padding-bottom: 23px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
 
   font-family: "Arial", sans-serif;
 
   color: $special_dark-grey;
 
   border-bottom: 1px solid $special_dark-grey-3;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    width: 60%;
+
+    margin-bottom: 29px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+
+    & br {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 93%;
+
+    margin-bottom: 4px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .programs__link {
@@ -103,19 +207,24 @@
 
   display: block;
 
-  margin-left: 19px;
-  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 16px;
 
   text-transform: uppercase;
 
   &::after {
     @include pseudo-element(32px, 10px);
 
-    bottom: 4px;
-    left: 90px;
+    bottom: 3px;
+    left: 101px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      bottom: 10px;
+      left: 134px;
+    }
   }
 
   &:hover::after,
@@ -127,9 +236,19 @@
 
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      bottom: 10px;
+      left: 134px;
+    }
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

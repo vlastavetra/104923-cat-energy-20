@@ -13,3 +13,76 @@
   width: $width;
   height: $height;
 }
+
+@mixin main-title-small {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 36px;
+  }
+  line-height: 36px;
+}
+
+@mixin main-title-large {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 60px;
+  }
+  line-height: 60px;
+}
+
+@mixin form-text-small {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 16px;
+  }
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin form-text-large {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 20px;
+  }
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin form-title-small {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 24px;
+  }
+  line-height: 26px;
+  text-transform: none;
+}
+
+@mixin form-title-large {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 36px;
+  }
+  line-height: 36px;
+  text-transform: none;
+}
+
+@mixin offers-text-small {
+  font: {
+    style: normal;
+    weight: 400;
+    size: 12px;
+  }
+  line-height: 16px;
+}
