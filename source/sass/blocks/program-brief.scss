@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 54.9%;
+    max-width: 790px;
 
     margin-bottom: 51px;
   }
@@ -178,12 +178,12 @@
   @media (min-width: $desktop) {
     position: relative;
 
+    max-width: 790px;
+
     margin-bottom: -285px;
 
     top: -285px;
     left: 650px;
-
-    width: 55%;
   }
 }
 
@@ -315,11 +315,11 @@
     background-color: $basic_green;
 
     @media (min-width: $tablet) {
-      width: 1145px;
+      width: 2145px;
       height: 2px;
 
       top: 60%;
-      right: -1185px;
+      right: -2185px;
     }
   }
 
@@ -500,9 +500,9 @@
     }
 
     @media (min-width: $desktop) {
-      width: 1478px;
+      width: 2478px;
 
-      right: -480px;
+      right: -1480px;
     }
   }
 
@@ -617,9 +617,9 @@
     }
 
     @media (min-width: $desktop) {
-      width: 1478px;
+      width: 2478px;
 
-      right: -510px;
+      right: -1510px;
     }
   }
 
@@ -723,13 +723,24 @@
   }
 }
 
+.program-brief__submit {
+  padding: $padding-h-mobile;
+
+  @media (min-width: $tablet) {
+    padding-left: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: $padding-h-desktop;
+  }
+}
+
 .program-brief__submit-button {
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
     width: 40%;
     padding-bottom: 16px;
-    margin-left: 41px;
     margin-bottom: 40px;
 
     font-size: 20px;
@@ -738,7 +749,6 @@
   @media (min-width: $desktop) {
     width: 46.8%;
     padding-bottom: 16px;
-    margin-left: 0;
     margin-bottom: 50px;
   }
 }

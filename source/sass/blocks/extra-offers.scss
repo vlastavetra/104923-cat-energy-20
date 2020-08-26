@@ -5,6 +5,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop) {
+    margin: 0;
     margin-bottom: 82px;
   }
 }
@@ -20,17 +21,17 @@
 
   &::before {
     @media (min-width: $tablet) {
-      @include pseudo-element(300px, 2px);
+      @include pseudo-element(1300px, 2px);
 
       top: 60%;
-      left: -300px;
+      left: -1300px;
 
       background-color: $basic_green;
     }
 
     @media (min-width: $desktop) {
       top: 64%;
-      left: -340px;
+      left: -1340px;
     }
   }
 
@@ -52,10 +53,10 @@
     }
 
     @media (min-width: $desktop) {
-      width: 959px;
+      width: 1959px;
 
       top: 64%;
-      right: -110px;
+      right: -1110px;
     }
   }
 

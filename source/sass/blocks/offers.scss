@@ -31,7 +31,9 @@
     margin-bottom: 66px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
+    width: 100%;
+
     margin-bottom: 75px;
   }
 }

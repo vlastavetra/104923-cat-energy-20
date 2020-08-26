@@ -8,12 +8,14 @@
   @media (min-width: $tablet) {
     row-gap: 30px;
 
-    margin: 0 auto;
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
+    width: 100%;
+
     padding-top: 107px;
+    margin: 0;
     margin-bottom: 73px;
 
     grid-template-columns: 1fr 1fr;
@@ -22,7 +24,7 @@
 }
 
 .programs__card {
-  padding: 0 20px;
+  padding: $padding-h-mobile;
   padding-top: 29px;
   padding-bottom: 22px;
 
@@ -32,6 +34,10 @@
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
   }
 }
 

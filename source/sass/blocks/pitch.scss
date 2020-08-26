@@ -94,7 +94,7 @@
     color: $basic_black;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-left: 80px;
     margin-bottom: 52px;
   }
@@ -116,6 +116,9 @@
 
   @media (min-width: $tablet) {
     width: 244px;
+
+    padding-top: 17px;
+    padding-bottom: 18px;
 
     font-size: 20px;
 
