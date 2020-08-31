@@ -94,6 +94,14 @@
 .offers__img {
   width: 140px;
 
+  @media (max-width: $mobile) {
+    margin-bottom: -1px;
+
+    &:first-child {
+      margin-top: -17px;
+    }
+  }
+
   @media (min-width: $tablet) {
     position: absolute;
 
@@ -181,7 +189,7 @@
 }
 
 .offers__order {
-  margin-top: 11px;
+  margin-top: -2px;
 
   @media (min-width: $tablet) {
     margin-top: 32px;
