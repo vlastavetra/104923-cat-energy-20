@@ -5,13 +5,12 @@
   background-color: $basic_grey;
 
   @media (min-width: $tablet) {
-    padding-top: 44px;
-    padding-bottom: 41px;
+    padding-top: 48px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 47px;
-    padding-bottom: 38px;
+    padding-top: 50px;
+    padding-bottom: 35px;
   }
 }
 
@@ -90,10 +89,16 @@
 
   @media (min-width: $tablet) {
     gap: 23px;
+
+    margin-top: -17px;
+    margin-left: 30px;
   }
 }
 
-.footer__social-link svg {
+.footer__social-icon,
+.footer__logo-html-icon {
+  fill: $special_grey-2;
+
   &:hover,
   &:focus {
     fill: $basic_green;
@@ -101,7 +106,41 @@
 
   &:active {
     fill: $basic_green;
-    opacity: 0.3;
+  }
+}
+
+.footer__social-icon {
+  &--vk {
+    @media (min-width: $tablet) {
+      width: 28px;
+      height: 33px;
+    }
+  }
+
+  &--ig {
+    @media (min-width: $tablet) {
+      width: 28px;
+      height: 33px;
+    }
+  }
+
+  &--fb {
+    stroke: $special_grey-2;
+
+    @media (min-width: $tablet) {
+      width: 28px;
+      height: 33px;
+    }
+
+    &:hover,
+    &:focus {
+      stroke: $basic_green;
+    }
+
+    &:active {
+      stroke: $basic_green;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -135,15 +174,4 @@
   line-height: 18px;
 
   color: $special_dark-grey;
-}
-
-.footer__logo-html-img path {
-  &:hover,
-  &:focus {
-    fill: $basic_green;
-  }
-
-  &:active {
-    fill: $basic_green;
-  }
 }
