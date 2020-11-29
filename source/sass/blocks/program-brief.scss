@@ -65,20 +65,18 @@
 .program-brief__fieldset {
   box-sizing: border-box;
 
-  width: 320px;
+  min-width: 320px;
   padding: $padding-h-mobile;
 
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 768px;
     padding-left: 71px;
     padding-right: 67px;
     margin: 0;
   }
 
   @media (min-width: $desktop) {
-    width: 1440px;
     padding: $padding-h-desktop;
     margin: 0;
   }
@@ -274,9 +272,28 @@
   }
 }
 
-.program-brief__contacts {
-  padding-top: 26px;
+.program-brief__fieldset-line {
+  position: relative;
+
   margin-bottom: 27px;
+
+  &::before {
+    @include pseudo-element(100vw, 2px);
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    background-color: $basic-green;
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 23px;
+    }
+  }
 
   @media (min-width: $tablet) {
     margin-bottom: 66px;
@@ -287,46 +304,29 @@
   }
 }
 
-.program-brief__contacts-title {
+.program-brief__title {
   @include form-title-small;
 
-  position: relative;
+  max-width: 100%;
 
-  max-width: 95%;
-  margin-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin-left: -22px;
+  margin-bottom: 33px;
 
-  &::before {
-    @media (min-width: $tablet) {
-      @include pseudo-element(300px, 2px);
-
-      top: 60%;
-      left: -340px;
-
-      background-color: $basic_green;
-    }
-  }
-
-  &::after {
-    @include pseudo-element(99px, 2px);
-
-    top: 31%;
-    right: -34px;
-
-    background-color: $basic_green;
-
-    @media (min-width: $tablet) {
-      width: 2145px;
-      height: 2px;
-
-      top: 60%;
-      right: -2185px;
-    }
-  }
+  background-color: $basic_white;
 
   @media (min-width: $tablet) {
     @include form-title-large;
 
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
     margin-bottom: 49px;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -453,69 +453,6 @@
   }
 }
 
-.program-brief__comment {
-  padding-top: 17px;
-  margin-bottom: 27px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 68px;
-  }
-}
-
-.program-brief__comment-title {
-  @include form-title-small;
-
-  position: relative;
-
-  width: 100%;
-
-  margin-bottom: 17px;
-
-  &::before {
-    @media (min-width: $tablet) {
-      @include pseudo-element(300px, 2px);
-
-      top: 59%;
-      left: -340px;
-
-      background-color: $basic_green;
-    }
-  }
-
-  &::after {
-    @include pseudo-element(158px, 2px);
-
-    top: 60%;
-    right: -20px;
-
-    background-color: $basic_green;
-
-    @media (min-width: $tablet) {
-      width: 478px;
-      height: 2px;
-
-      top: 59%;
-      right: -67px;
-    }
-
-    @media (min-width: $desktop) {
-      width: 2478px;
-
-      right: -1480px;
-    }
-  }
-
-  @media (min-width: $tablet) {
-    @include form-title-large;
-
-    margin-bottom: 58px;
-  }
-}
-
 .program-brief__comment-text {
   @include form-text-small;
 
@@ -567,73 +504,6 @@
 
   @media (min-width: $desktop) {
     width: 100%;
-  }
-}
-
-.program-brief__optional {
-  padding-top: 17px;
-  margin-bottom: 21px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 39px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 48px;
-  }
-}
-
-.program-brief__optional-title {
-  @include form-title-small;
-
-  position: relative;
-
-  width: 100%;
-
-  margin-bottom: 16px;
-
-  &::before {
-    @media (min-width: $tablet) {
-      @include pseudo-element(300px, 2px);
-
-      top: 59%;
-      left: -340px;
-
-      background-color: $basic_green;
-    }
-  }
-
-  &::after {
-    @include pseudo-element(136px, 2px);
-
-    top: 59%;
-    right: -20px;
-
-    background-color: $basic_green;
-
-    @media (min-width: $tablet) {
-      width: 446px;
-      height: 2px;
-
-      top: 59%;
-      right: -67px;
-    }
-
-    @media (min-width: $desktop) {
-      width: 2478px;
-
-      right: -1510px;
-    }
-  }
-
-  @media (min-width: $tablet) {
-    @include form-title-large;
-
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 39px;
   }
 }
 
